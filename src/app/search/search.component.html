@@ -27,13 +27,9 @@
       <p class="lead">Enter a search string above and press search</p>
     </div>
   </div>
-<ul>
-  <li *ngFor="let book of googlebookservice.books">
-    {{book.title}}
-  </li>
-</ul>
+
   <!-- TODO: Show the results of the search -->
-<!--   <app-book-list></app-book-list> -->
+  <app-book-list [books]="googlebookservice.books"></app-book-list>
 
   <div class="d-flex justify-content-center">
     <!-- TODO: Show pagnation -->
