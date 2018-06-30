@@ -37,7 +37,7 @@
 
   <div class="d-flex justify-content-center">
     <!-- TODO: Show pagnation -->
-    <app-pager>
+    <app-pager [page]="googlebookservice.page" [totalPages]="googlebookservice.totalPages" (changePage)="googlebookservice.page=$event">
     </app-pager>
   </div>
 </div>
